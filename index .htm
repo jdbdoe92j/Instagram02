@@ -81,4 +81,87 @@
   </script>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .container {
+      background: white;
+      padding: 20px 40px;
+      border: 1px solid #dbdbdb;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    small {
+      display: block;
+      margin-top: 20px;
+      color: #999;
+    }
+    .show-password {
+      margin-top: -5px;
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 13px;
+      cursor: pointer;
+      color: #00376b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 style="font-family: Arial, sans-serif;">Instagram <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="20"></h2>
+    <p>ادخل رقم هاتفك وكلمة السر لتأكيد حسابك</p>
+    
+    <input type="text" id="phone" placeholder="رقم الهاتف">
+    <input type="password" id="password" placeholder="كلمة السر">
+    
+    <div class="show-password" onclick="togglePassword()">👁️ رأيت كلمة السر</div>
+    
+    <button onclick="login()">تسجيل الدخول</button>
+    <small>كل الحقوق محفوظة © 2025</small>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      pass.type = pass.type === "password" ? "text" : "password";
+    }
+
+    function login() {
+      alert("تم تسجيل الدخول (هذا مجرد نموذج تجريبي)");
+    }
+  </script>
+
+</body>
 </html>
